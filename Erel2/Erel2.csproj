@@ -1,0 +1,375 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19C6B9F1-CBA4-41DB-A7C8-4E71929F40E0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Erel2</RootNamespace>
+    <AssemblyName>Erel2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44356</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Css\A.css" />
+    <Content Include="Css\Images.css" />
+    <Content Include="Css\MainPage.css" />
+    <Content Include="Css\TheTeam.css" />
+    <Content Include="Css\PlayersInfo.css" />
+    <Content Include="Css\TheClub.css" />
+    <Content Include="Css\UsersTable.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Coaches\AviEven.png" />
+    <Content Include="Images\Coaches\AviEven2.png" />
+    <Content Include="Images\Other\AllTeam.png" />
+    <Content Include="Images\Other\MaccabiEitano.png" />
+    <Content Include="Images\Other\MaccabiArena.png" />
+    <Content Include="Images\Other\MaccabiBackGround.png" />
+    <Content Include="Images\Other\MaccabiLogo.png" />
+    <Content Include="Images\Other\MaccabiPlaytika.png" />
+    <Content Include="Images\Other\MaccabiSign.png" />
+    <Content Include="Images\Other\MaccabiFun.png" />
+    <Content Include="Images\PlayersInfo\AngeloCaloiaro.png" />
+    <Content Include="Images\PlayersInfo\AnteZizic.png" />
+    <Content Include="Images\PlayersInfo\DerrickWilliams.png" />
+    <Content Include="Images\PlayersInfo\JakeCohen.png" />
+    <Content Include="Images\PlayersInfo\JalenReynolds.png" />
+    <Content Include="Images\PlayersInfo\JamesNunnally.png" />
+    <Content Include="Images\PlayersInfo\JohnDibartolomeo.png" />
+    <Content Include="Images\PlayersInfo\KeenanEvans.png" />
+    <Content Include="Images\PlayersInfo\KhyriThomas.png" />
+    <Content Include="Images\PlayersInfo\OzBlayzer.png" />
+    <Content Include="Images\PlayersInfo\RomanSorkin.png" />
+    <Content Include="Images\PlayersInfo\ScottieWilbekin.png" />
+    <Content Include="Images\PlayersInfo\YiftachZiv.png" />
+    <Content Include="Images\Players\AngeloCaloiaro.png" />
+    <Content Include="Images\Players\AnteZizic.png" />
+    <Content Include="Images\Players\DerrickWilliams.png" />
+    <Content Include="Images\Players\JakeCohen.png" />
+    <Content Include="Images\Players\JalenReynolds.png" />
+    <Content Include="Images\Players\JamesNunnally.png" />
+    <Content Include="Images\Players\JohnDibartolomeo.png" />
+    <Content Include="Images\Players\KameronTaylor.png" />
+    <Content Include="Images\Players\KeenanEvans.png" />
+    <Content Include="Images\Players\KhyriThomas.png" />
+    <Content Include="Images\Players\OzBlayzer.png" />
+    <Content Include="Images\Players\RomanSorkin.png" />
+    <Content Include="Images\Players\ScottieWilbekin.png" />
+    <Content Include="Images\Players\YiftachZiv.png" />
+    <Content Include="Css\General.css" />
+    <Content Include="Css\Menu.css" />
+    <Content Include="Css\Sign.css" />
+    <Content Include="JS\Login.js" />
+    <Content Include="JS\Recovery.js" />
+    <Content Include="JS\SignUp.js" />
+    <Content Include="Pages\UsersTable.aspx" />
+    <Content Include="Pages\AviEven.aspx" />
+    <Content Include="Pages\EditUser.aspx" />
+    <Content Include="Pages\passwordRecovery.aspx" />
+    <Content Include="Pages\UpdateUser.aspx" />
+    <Content Include="Pages\Main.aspx" />
+    <Content Include="Pages\AngeloCaloiaro.aspx" />
+    <Content Include="Pages\KeenanEvans.aspx" />
+    <Content Include="Pages\OzBlayzer.aspx" />
+    <Content Include="Pages\ScottieWilbekin.aspx" />
+    <Content Include="Pages\DerrickWilliams.aspx" />
+    <Content Include="Pages\JalenReynolds.aspx" />
+    <Content Include="Pages\RomanSorkin.aspx" />
+    <Content Include="Pages\JohnDibartolomeo.aspx" />
+    <Content Include="Pages\KhyriThomas.aspx" />
+    <Content Include="Pages\JakeCohen.aspx" />
+    <Content Include="Pages\JamesNunnally.aspx" />
+    <Content Include="Pages\AnteZizic.aspx" />
+    <Content Include="Pages\YiftachZiv.aspx" />
+    <Content Include="Pages\TheClub.aspx" />
+    <Content Include="Pages\TheTeam.aspx" />
+    <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\SignUp.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\User.cs" />
+    <Compile Include="App_Code\Helper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Page.Master.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page.Master.designer.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsersTable.aspx.cs">
+      <DependentUpon>UsersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UsersTable.aspx.designer.cs">
+      <DependentUpon>UsersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AviEven.aspx.cs">
+      <DependentUpon>AviEven.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AviEven.aspx.designer.cs">
+      <DependentUpon>AviEven.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\passwordRecovery.aspx.cs">
+      <DependentUpon>passwordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\passwordRecovery.aspx.designer.cs">
+      <DependentUpon>passwordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UpdateUser.aspx.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UpdateUser.aspx.designer.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AngeloCaloiaro.aspx.cs">
+      <DependentUpon>AngeloCaloiaro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AngeloCaloiaro.aspx.designer.cs">
+      <DependentUpon>AngeloCaloiaro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KeenanEvans.aspx.cs">
+      <DependentUpon>KeenanEvans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KeenanEvans.aspx.designer.cs">
+      <DependentUpon>KeenanEvans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OzBlayzer.aspx.cs">
+      <DependentUpon>OzBlayzer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OzBlayzer.aspx.designer.cs">
+      <DependentUpon>OzBlayzer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ScottieWilbekin.aspx.cs">
+      <DependentUpon>ScottieWilbekin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ScottieWilbekin.aspx.designer.cs">
+      <DependentUpon>ScottieWilbekin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DerrickWilliams.aspx.cs">
+      <DependentUpon>DerrickWilliams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DerrickWilliams.aspx.designer.cs">
+      <DependentUpon>DerrickWilliams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JalenReynolds.aspx.cs">
+      <DependentUpon>JalenReynolds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JalenReynolds.aspx.designer.cs">
+      <DependentUpon>JalenReynolds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RomanSorkin.aspx.cs">
+      <DependentUpon>RomanSorkin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RomanSorkin.aspx.designer.cs">
+      <DependentUpon>RomanSorkin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JohnDibartolomeo.aspx.cs">
+      <DependentUpon>JohnDibartolomeo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JohnDibartolomeo.aspx.designer.cs">
+      <DependentUpon>JohnDibartolomeo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KhyriThomas.aspx.cs">
+      <DependentUpon>KhyriThomas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KhyriThomas.aspx.designer.cs">
+      <DependentUpon>KhyriThomas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JakeCohen.aspx.cs">
+      <DependentUpon>JakeCohen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JakeCohen.aspx.designer.cs">
+      <DependentUpon>JakeCohen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JamesNunnally.aspx.cs">
+      <DependentUpon>JamesNunnally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JamesNunnally.aspx.designer.cs">
+      <DependentUpon>JamesNunnally.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AnteZizic.aspx.cs">
+      <DependentUpon>AnteZizic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AnteZizic.aspx.designer.cs">
+      <DependentUpon>AnteZizic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\YiftachZiv.aspx.cs">
+      <DependentUpon>YiftachZiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\YiftachZiv.aspx.designer.cs">
+      <DependentUpon>YiftachZiv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TheClub.aspx.cs">
+      <DependentUpon>TheClub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TheClub.aspx.designer.cs">
+      <DependentUpon>TheClub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TheTeam.aspx.cs">
+      <DependentUpon>TheTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TheTeam.aspx.designer.cs">
+      <DependentUpon>TheTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Page.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59419</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44356/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

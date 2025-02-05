@@ -1,0 +1,72 @@
+﻿body {
+    font-family: sans-serif;
+    color: black;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.img {
+    position: absolute;
+    top: 210px;
+    right: 100px;
+}
+
+.img2 {
+    position: absolute;
+    top: 651px;
+    left: 531px;
+}
+
+.img3 {
+    position: absolute;
+    top: 340px;
+}
+
+.btable {
+    overflow-y: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 500px;
+    height: 655px;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+table {
+    position: absolute;
+    top: 193px;
+    left: 530px;
+    border-spacing: 0px;
+    border: 1px solid #fff;
+}
+
+.tableInfo-th {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: linear-gradient(to left, #00008b, #FFD700);
+}
+
+.tableInfo-td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: #FFD700;
+}
+
+.tableInfoTop {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #00008b;
+}
+
+.PlayerName {
+    font-size: 60px;
+    color: black;
+    position: absolute;
+    text-align: center;
+    right: 550px;
+    top: 200px;
+}

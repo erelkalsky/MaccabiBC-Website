@@ -1,0 +1,25 @@
+﻿body {
+}
+
+.square {
+    height: 120px;
+    width: 500px;
+    background-color: rgb(68 68 68 / 0.50);
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ImagePlace {
+    display: block;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.text {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}

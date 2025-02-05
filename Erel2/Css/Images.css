@@ -1,0 +1,34 @@
+﻿.playersSize {
+    width: 12%;
+    height: 12%;
+}
+
+.CoachesSize {
+    width: 19%;
+    height: 19%;
+}
+
+.PlayersInfoSize {
+    width: 420px;
+    height: 752px;
+}
+
+.CoachesInfoSize {
+    width: 65%;
+    height: 65%;
+}
+
+.MaccbiPlaytika {
+    width: 22.7%;
+    height: 22.7%;
+}
+
+.AllPlayers {
+    height: 40%;
+    width: 40%;
+}
+
+.MaccabiArena {
+    height: 15%;
+    width: 17.9%;
+}

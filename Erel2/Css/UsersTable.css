@@ -1,0 +1,81 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+.usersTable {
+    text-align: center;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+.usersTable th, td {
+    border: solid 1px;
+}
+
+.bgColor {
+    background-color: rgb(68 68 68 / 0.50);
+}
+
+.helpButtons {
+    position: absolute;
+    top: 330px;
+    left: 700px;
+}
+
+.roundBtn {
+    background-color: rgb(68 68 68 / 0.50);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.roundBtn:hover {
+    background-color: rgb(110 110 110 / 0.50);
+}
+
+.btn {
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.btn:hover {
+    background-color: rgb(110 110 110 / 0.50);
+}
+
+.box {
+    width: 430px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: rgb(68 68 68 / 0.50);
+    padding: 10px;
+    margin: 10% auto;
+    text-align: left;
+    position: absolute;
+    top: 93px;
+    left: 246px;
+}
+
+select {
+    border: 1px;
+    border-color: black;
+    outline: none;
+}
+
+input {
+    border: 1px;
+    outline: none;
+}
+
+.errorMsg {
+    font-size: 35px;
+    color: red;
+
+    position: absolute;
+    top: 315px;
+    right: 250px;
+}

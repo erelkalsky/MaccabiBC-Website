@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erel2", "Erel2\Erel2.csproj", "{19C6B9F1-CBA4-41DB-A7C8-4E71929F40E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19C6B9F1-CBA4-41DB-A7C8-4E71929F40E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C6B9F1-CBA4-41DB-A7C8-4E71929F40E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C6B9F1-CBA4-41DB-A7C8-4E71929F40E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C6B9F1-CBA4-41DB-A7C8-4E71929F40E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {880B18C2-076E-4C7C-8BEA-E0C9FE8F8140}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,84 @@
+﻿body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.sing-up-form {
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.sing-up-form h1 {
+    color: #1c8adb;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    direction: rtl;
+    border-radius: 20px;
+    padding: 5px;
+    width: 92%;
+    margin: 8px 0;
+    border: 1px solid #999;
+}
+
+.phone-box {
+    direction: rtl;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 8px 0;
+    width: 60%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.select-box-small {
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 8px 0;
+    width: 30%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.select-box-big {
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 8px 0;
+    width: 97%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.button {
+    background-color: #1c8adb;
+    color: #fff;
+    width: 97%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input.button:hover, button:hover {
+    background-color: darkblue;
+}
+
+img {
+    width: 70px;
+    margin-top: -50%;
+}
+
+.msgError {
+    font-size: 10px;
+    color: red;
+}

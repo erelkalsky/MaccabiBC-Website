@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="Erel2.Page" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Maccabi Tel Aviv Basketball Club</title>
+
+    <link href="Images/Other/MaccabiLogo.png" rel="icon" />
+    <link href="Css/Menu.css" rel="stylesheet" />
+    <link href="Css/General.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+    <div class="topnav">
+<%--    <a href="Pages/Main.aspx" runat="server" id="Main">Home</a>
+        <a href="Pages/TheClub.aspx" runat="server" id="TheClub">The Club</a>
+        <a href="Pages/TheTeam.aspx" runat="server" id="TheTeam">The Team</a>
+        <a href="Pages/UsersTable.aspx" runat="server" id="UsersTable">Users List</a>
+        <div class="topnav-right">
+            <a href="Pages/UpdateUser.aspx" runat="server" id="UpdateUser">Update User</a>
+            <a runat="Server" onserverclick="btn_logot" id="logoutBtn" name="logoutBtn">Exit</a>
+            <a href="Pages/Login.aspx" runat="server" id="Login">Login</a>
+            <a href="Pages/SignUp.aspx" runat="server" id="SignUp">Sign Up</a>
+        </div>--%>
+
+        <a runat="Server" onserverclick="btn_logot" id="logoutBtn" name="logoutBtn">יציאה</a>
+        <a href="Pages/UpdateUser.aspx" runat="server" id="UpdateUser">עדכון משתמש</a>
+        <a href="Pages/SignUp.aspx" runat="server" id="SignUp">הרשמה</a>
+        <a href="Pages/Login.aspx" runat="server" id="Login">כניסה</a>
+        <div class="topnav-right">
+            <a href="Pages/UsersTable.aspx" runat="server" id="UsersTable">טבלת משתמשים</a>
+            <a href="Pages/TheTeam.aspx" runat="server" id="TheTeam">הקבוצה</a>
+            <a href="Pages/TheClub.aspx" runat="server" id="TheClub">המועדון</a>
+            <a href="Pages/Main.aspx" runat="server" id="Main">דף הבית</a>
+        </div>
+    </div>
+        <div style="color: #fff; direction:rtl">
+            <h4 style="color: azure; font-family: sans-serif; text-align:right;">
+                <%="שלום: " + Session["userName"]%>
+                <br />מספר המבקרים: <input style="direction:rtl; border: 0;background-color: inherit; outline: none; color: azure" type="text" id="totalVisitors" name="totalVisitors" readonly runat="server">
+            </h4>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

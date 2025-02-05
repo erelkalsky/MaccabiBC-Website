@@ -1,0 +1,12 @@
+﻿body {
+    font-family: sans-serif;
+    color: black;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.googelMaps {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+}
